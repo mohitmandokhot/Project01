@@ -1,0 +1,24 @@
+The Shawshank Redemption
+100
+19.95
+DVD
+The Dark Knight
+50
+19.95
+DVD
+Casablanca
+137
+9.95
+DVD
+The Girl With The Dragon Tattoo
+150
+14.95
+Book
+Vertigo
+55
+9.95
+DVD
+A Game of Thrones
+100
+8.95
+Book
