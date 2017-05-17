@@ -24,13 +24,17 @@ public class Project01 {
 		// TODO Auto-generated method stub
 
 		// Ask user to enter filename. Create a stream with that file
+		
+		//Time Program for Performance
+		
+		
 		System.out.print("Enter database filename: ");
 		Scanner keyIn = new Scanner(System.in);
 
 		String userFileName = keyIn.nextLine();
 
 		try {
-
+			final long startTime = System.currentTimeMillis();
 			File userFile = new File(userFileName);
 			Scanner readFile = new Scanner(userFile);
 
@@ -47,6 +51,10 @@ public class Project01 {
 			// Request Summary Report
 			productSummaryReport(prodNames, prodQuantity, prodPrice, prodType);
 			inventorySummaryReport(prodNames, prodQuantity, prodPrice, prodType);
+			
+			//Capture end of program and print execution time summary
+			final long endTime = System.currentTimeMillis();
+			System.out.println("Total execution time: " + (endTime - startTime) + " ms" );
 
 		}
 
@@ -84,7 +92,6 @@ public class Project01 {
 		}
 
 		return itemNames;
-
 	}
 
 	private static ArrayList<Integer> getItemQuantity(ArrayList<String> contents) {
